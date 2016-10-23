@@ -1,0 +1,816 @@
+.clearfix {
+    min-height: 1%;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+@font-face {
+    font-family: "Exo2 Regular";
+    src: url("../fonts/Exo2Regular/Exo2Regular.eot");
+    src: url("../fonts/Exo2Regular/Exo2Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Exo2Regular/Exo2Regular.woff") format("woff"),
+    url("../fonts/Exo2Regular/Exo2Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PFDin TextCondPro Thin";
+    src: url("../fonts/PFDinTextCondPro/PFDinTextCondPro-Thin.eot");
+    src: url("../fonts/PFDinTextCondPro/PFDinTextCondPro-Thin.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PFDinTextCondPro/ufonts.com_pfdintextcondpro-thin.woff") format("woff"),
+    url("../fonts/PFDinTextCondPro/pfdintextcondpro-thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Exo2 Bold";
+    src: url("../fonts/Exo2Bold/Exo2Bold.eot");
+    src: url("../fonts/Exo2Bold/Exo2Bold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Exo2Bold/Exo2Bold.woff") format("woff"),
+    url("../fonts/Exo2Bold/Exo2Bold.ttf") format("truetype");
+}
+
+body{
+    background-color:#fff;
+    font:15px/1.5 "PFDin TextCondPro Thin", Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    max-width:960px;
+    margin:0 auto;
+}
+
+.logo{
+    display:block;
+    float:left;
+    height:62px;
+    width:204px;
+    background-image:url(../images/logo.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+h1{
+    font-size:48px;
+    text-transform: uppercase;
+}
+
+h2{
+    display:block;
+    text-align:center;
+    font:30px "PFDin TextCondPro Thin", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding:20px 0 40px 0;
+    position:relative;
+    margin-top:37px;
+}
+
+h2:before{
+    content:"";
+    display:block;
+    width:234px;
+    height:1px;
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-117px;
+    background:url(../images/line.jpg);
+}
+
+h3{
+    display:block;
+    text-align:left;
+    font:17px "PFDin TextCondPro Thin", Arial, Helvetica, sans-serif;
+    padding:0 0 5px 0;
+    border-bottom:1px solid #e6af08;
+    color:#292a2a;
+}
+/*--------------------Header start-------------------------*/
+#header{
+    padding:28px 0;
+    background:rgba(0, 0, 0, 0.68);
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    z-index:9;
+}
+
+    #header .wrapper{
+        width:1130px;
+    }
+
+    #header .contacts{
+        display:block;
+        float:right;
+    }
+
+    #header .contacts li{
+        display:block;
+        float:left;
+    }
+
+    #header .contacts li.phone{
+        background:url(../images/tel.png) 0 bottom no-repeat;
+        padding-left:36px;
+    }
+
+    #header .contacts li.mail{
+        background:url(../images/letter.png) 0 bottom no-repeat;
+        margin-left:73px;
+        padding-left:43px;
+    }
+
+    #header .contacts span{
+        display: block;
+        font:14px "Exo2 Regular", Arial, Helvetica, sans-serif;
+        color: #00e4ff;
+    }
+
+    #header .contacts p{
+        display: block;
+        font:18px "Exo2 Regular", Arial, Helvetica, sans-serif;
+        color: #dcdcdc;
+    }
+
+    #header .contacts a{
+        color: #dcdcdc;
+    }
+
+    .nav{
+        max-width:100%;
+        border-top:3px solid #0be4fd;
+        background:rgba(223, 223, 223, 0.68);
+        position:absolute;
+        left:0;
+        right:0;
+        top:118px;
+        text-align:center;
+        font-size:0;
+    }
+
+        .nav ul{
+            display:inline-block;
+        }
+
+        .nav li{
+            display:block;
+            float:left;
+            }
+
+        .nav a{
+            display:block;
+            font:18px "Exo2 Regular", Arial, Helvetica, sans-serif;
+            color:#1c1c1c;
+            padding:12px 18px;
+        }
+
+        .nav a.active, .nav a:hover{
+            background-color:#e7f1f2;
+            transition:all 0.3s;
+        }
+
+#banner{
+    display:block;
+    min-height:155px;
+    background-image:url(../images/banner_img.jpg);
+    background-size:cover;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+    padding-top:245px;
+}
+
+    .slogan{
+        margin:0 auto;
+        font-family:"Exo2 Regular", Arial, Helvetica, sans-serif;
+        color:#1c1c1c;
+    }
+
+    .slogan span{
+        font-size:30px;
+    }
+/*--------------------Header end-------------------------*/
+
+/*--------------------Main start-------------------------*/
+#main{
+    position:relative;
+}
+
+    #leftSide{
+        display:block;
+        width:190px;
+        float:left;
+        padding:0 25px;
+        margin-bottom:10px;
+    }
+
+        .sidebar{
+            display:block;
+            margin-bottom:47px;
+        }
+
+        .sidebar li{
+            display:block;
+            margin-bottom:8px;
+        }
+
+        .sidebar a{
+            display:block;
+            padding:8px 15px;
+            font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+            background-color:#cadff1;
+            color:#333333;
+            border-radius:5px;
+            position:relative;
+        }
+
+        .sidebar a.active, .sidebar a:hover{
+            background-color:#ffb86c;
+            transition:all 0.3s;
+        }
+
+        .sidebar a::before{
+            content:"";
+            display:block;
+            width:6px;
+            height:9px;
+            position:absolute;
+            top:11px;
+            right:9px;
+            background-image:url(../images/strel.png);
+        }
+
+        .adds a{
+            display:block;
+            height:276px;
+            background-color:#ffb86c;
+            padding:1px;
+            margin-bottom:55px;
+            border-radius:5px;
+            position:relative;
+        }
+
+        .adds .img {
+            display:block;
+            height:197px;
+            overflow:hidden;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .adds img {
+            min-width:100%;
+            min-height:100%;
+        }
+
+        .adds .text{
+            display:block;
+            height:64px;
+            background-image:url(../images/adver_bg.png);
+            background-size:contain;
+            background-repeat:no-repeat;
+            font:bold 18px Calibri, serif;
+            color:#fff;
+            text-align:center;
+            text-transform: uppercase;
+            padding-top: 15px;
+        }
+
+            .lable{
+                display:block;
+                position:absolute;
+                top:0;
+                left:12px;
+                background-image:url(../images/lable.png);
+                background-size:cover;
+                background-repeat:no-repeat;
+                height:64px;
+                width:76px;
+                font:bold 18px Calibri, serif;
+                color:#fff;
+                text-align:center;
+                line-height:1;
+            }
+
+            .lable span{
+                display:block;
+                margin-right: 4px;
+            }
+
+            .lable .price{
+                display:block;
+                font-size:24px;
+            }
+
+    #leftSide + .content{
+        float:right;
+        width:677px;
+        margin-bottom:59px;
+    }
+
+    .offers > li{
+        margin-bottom:15px;
+    }
+
+    .offers .image{
+        display:block;
+        float:left;
+        width:154px;
+        height:114px;
+        background-size:cover;
+        background-repeat:no-repeat;
+        padding:3px;
+        border:1px solid #d2d2d2;
+        border-radius:2px;
+        margin:10px 17px 0 0;
+    }
+
+    .offers .image span{
+        display:block;
+        height:100%;
+        overflow:hidden;
+    }
+
+    .offers img{
+        min-width:100%;
+        min-height:100%;
+    }
+
+    .offers p{
+        text-align:justify;
+        font:15px "PFDin TextCondPro Thin", Arial, Helvetica, sans-serif;
+        color:#333;
+        margin-top:10px;
+    }
+
+    .offers .read-more{
+        display:block;
+        font:14px "PFDin TextCondPro Thin", Arial, Helvetica, sans-serif;
+        color:#dfa801;
+        margin: 15px 0;
+    }
+
+        .buttons li{
+            display:inline-block;
+            margin-right:5px;
+        }
+
+        .buttons a{
+            display:block;
+            padding:7px;
+            background-image:url(../images/button.png);
+            background-size:100% 100%;
+            background-repeat:no-repeat;
+            font:bold 13px Calibry, serif;
+            color:#504f4f;
+        }
+
+    .guarantee{
+        display:block;
+        position:relative;
+        background-color:#eaeaea;
+        clear:both;
+        padding:7px 0;
+        margin-bottom:62px;
+    }
+
+    .guarantee > div{
+        border-top:1px dashed #bcbcbc;
+        border-bottom:1px dashed #bcbcbc;
+        padding:14px 10px;
+    }
+
+        .left-side, .right-side{
+            display:block;
+            float:left;
+            width:350px;
+            font:16px "PFDin TextCondPro Thin", Arial, Helvetica, sans-serif;
+            color:#5e5e5e;
+            max-width:100%;
+        }
+
+        .left-side{
+            float:left;
+        }
+
+        .right-side{
+            float:right;
+        }
+
+        .right-side  a{
+            color:#0084bf;
+            text-decoration:underline;
+        }
+
+        .circle{
+            display:block;
+            position:absolute;
+            height:172px;
+            width:172px;
+            left:50%;
+            top:50%;
+            margin-left:-86px;
+            margin-top:-87px;
+            border-radius:100%;	
+            background-image:url(../images/circle.png);
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+
+    .social{
+        background:#cfcfcf url(../images/social.png) 50% 50% no-repeat;
+        background-size:cover;
+        padding:37px 0 54px;
+    }
+
+        .social h2{
+            margin:0;
+        }
+
+        .social ul{
+            padding:0 26px;
+        }
+
+        .social li{
+            display:block;
+            float:left;
+        }
+
+        .social li+li{
+            margin-left:86px;
+        }
+
+        .social img{
+            max-width:100%;
+        }
+
+    .partners{
+        padding-bottom:40px;
+    }
+
+        .slider{
+            position:relative;
+        }
+
+        .slider ul{
+            display:block;
+            padding:0 12px;
+            white-space:nowrap;
+            overflow:hidden;
+            font-size:0;
+            text-align:center;
+        }
+
+        .slider .prev{
+            display:block;
+            width:11px;
+            height:24px;
+            position:absolute;
+            top:50%;
+            left:0;
+            margin-top:-12px;
+            background:url(../images/prev.png);
+            cursor:pointer;
+        }
+
+        .slider .next{
+            display:block;
+            width:11px;
+            height:24px;
+            position:absolute;
+            top:50%;
+            right:0;
+            margin-top:-12px;
+            background:url(../images/next.png);
+            cursor:pointer;
+        }
+
+        .slider li{
+            display:inline-block;
+            height:77px;
+            width:20%;
+        }
+
+        .slider a{
+            display:block;
+            height:100%;
+        }
+
+        .slider img {
+            max-width:90%;
+        }
+
+/*--------------------Main end-------------------------*/
+
+/*--------------------Footer start-------------------------*/
+
+.footer{
+    background-color:#f2f2f2;
+    border-top:1px solid #cfcfcf;
+    border-bottom:1px solid #cfcfcf;
+}
+
+    .footer .nav{
+        height:60px;
+        border-top:none;
+        background:none;
+        position:static;
+        clear:both;
+    }
+
+    .footer .nav ul{
+        display:inline-block;
+        text-align:center;
+    }
+
+    .footer .nav li{
+        padding:0 18px 0 18px;
+    }
+
+    .footer .nav a{
+        font:18px/60px "PFDin TextCondPro Thin", Arial, Helvetica, sans-serif;
+        padding:0;
+        height:60px; 
+    }
+
+    .footer .nav a:hover{
+        background-color:transparent;
+    }
+
+    .footer .wrapper{
+        text-align:center;
+    }
+
+    .footer .contacts{
+        border-top:1px solid #cfcfcf;
+        padding-top:13px;
+    }
+
+        .footer .contacts p{
+            display:block;
+            font:16px "PFDin TextCondPro Thin", Arial, Helvetica, sans-serif;
+            color:#474747;
+            margin-bottom:10px;
+        }
+
+        .footer .contacts a{
+            color:#474747;
+        }
+
+        .footer .tel{
+            display:block;
+            font:18px "PFDin TextCondPro Thin", Arial, Helvetica, sans-serif;
+            color:#008aff;
+        }
+
+    .copyrights{
+        text-align:center;
+        padding:8px 0;
+    }
+
+        .copyrights a{
+            display:inline-block;
+            vertical-align:middle;
+            margin:9px 18px 0 0;
+        }
+
+        .copyrights span{
+            display:inline-block;
+            font:18px "PFDin TextCondPro Thin", Arial, Helvetica, sans-serif;
+            color:#9d9d9d;
+            vertical-align:middle;
+        }
+
+/*--------------------RESPONSIVE DESIGN-------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.wrapper{
+    	max-width:95%;
+    }
+
+    .logo{
+        width:180px; 
+        height:55px;
+    }
+
+    #header .contacts p{
+        font-size:17px;
+    }
+
+    .nav{
+        top:112px;
+    }
+
+    .nav a{
+        padding:10px; 
+        font-size:15px;
+    }
+    
+    .slogan span{
+        font-size:27px;
+    }
+
+    h1{
+        font-size:40px;
+    }
+
+    h2{
+        padding:20px 0 25px 0;
+    }
+
+    #leftSide{
+        padding:0;
+    }
+
+    #leftSide + .content{
+        max-width:70%;
+        padding-left:0;
+    }
+
+    .left-side, .right-side{
+        max-width:38%;
+        font-size:15px;
+    }
+
+    .circle{
+        width:150px; 
+        height:150px;
+        margin-top:-75px;
+        margin-left:-75px;
+    }
+
+    .social{
+        padding-bottom:50px;
+    }
+
+    .social li{
+        width:30%;
+    }
+
+    .social li + li{
+        margin-left:5%;
+    }
+
+    .footer .nav, .footer .nav a{
+        height:50px;
+        line-height:50px;
+    }
+
+    .footer .nav a, .footer .contacts p{
+        font-size:15px;
+    }
+
+    .footer .tel, .copyrights span{
+        font-size:17px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+	.wrapper{
+    	max-width:95%;
+    }
+
+    #header{
+        height:auto;
+        padding-bottom:20px;
+    }
+
+    .logo{
+        width:150px;
+        height:45px; 
+        margin-bottom:20px;
+        float:none;
+    }
+
+    #header .contacts{
+        float:none;
+    }
+
+    #header .contacts li{
+        float:none;
+    }
+
+    #header .contacts li.mail{
+        margin:20px 0 0 0;
+    }
+
+    #header .contacts p{
+        font-size:16px;
+    }
+
+    .nav{
+        top:243px;
+        background:rgba(223, 223, 223, 1);
+        border-bottom:3px solid #0be4fd;
+    }
+
+    .nav ul{
+        display:block;
+    }
+
+    .nav li{
+        float:none;
+    }
+
+    .nav li+li{
+        border-top:1px solid #b7bbbb;
+    }
+
+    .menuButton{
+        width:40px;
+        height:40px;
+        position:absolute;
+        top:10px;
+        right:10px;
+        background:url(../images/menu_ico.png) no-repeat;
+        background-size:cover;
+        cursor:pointer;
+    }
+
+    #banner{
+        min-height:120px;
+        padding:260px 0 10px;
+    }
+
+    .slogan span{
+        font-size:20px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    h2{
+        margin-top:30px;
+        padding:20px 0;
+        font-size:27px;
+    }
+
+    #leftSide{
+        float:none;
+        margin:0 auto;
+    }
+
+    #leftSide + .content, .content{
+        max-width:100%; 
+        margin:0 auto 15px;
+    }
+
+    .guarantee{
+        margin-bottom:35px;
+    }
+
+    .offers .image{
+        margin:15px 0;
+        float:none;
+    }
+
+    .left-side, .right-side{
+        float:none;
+    }
+
+    .left-side{
+        margin-bottom:15px;
+    }
+
+    .social{
+        padding-bottom:30px;
+    }
+
+    .social li{
+        width:30%;
+    }
+
+    .social li + li{
+        margin-left:5%;
+    }
+
+    .slider li{
+        width:50%;
+    }
+
+    .copyrights{
+        border-top: 1px solid #cfcfcf;
+    }
+
+    .nav, .adds, .circle, .footer .contacts, .footer{
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+    #header .contacts li{
+        float:left;
+    }
+    #header .contacts li.mail{
+        margin:0 0 0 30px;
+    }
+    .nav{
+        top:168px;
+    }
+}
